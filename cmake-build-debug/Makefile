@@ -128,6 +128,30 @@ JustinWorkout/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/build
 .PHONY : JustinWorkout/fast
 
+exercise.obj: exercise.cpp.obj
+.PHONY : exercise.obj
+
+# target to build an object file
+exercise.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/exercise.cpp.obj
+.PHONY : exercise.cpp.obj
+
+exercise.i: exercise.cpp.i
+.PHONY : exercise.i
+
+# target to preprocess a source file
+exercise.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/exercise.cpp.i
+.PHONY : exercise.cpp.i
+
+exercise.s: exercise.cpp.s
+.PHONY : exercise.s
+
+# target to generate assembly for a file
+exercise.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/exercise.cpp.s
+.PHONY : exercise.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -152,6 +176,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+workout.obj: workout.cpp.obj
+.PHONY : workout.obj
+
+# target to build an object file
+workout.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/workout.cpp.obj
+.PHONY : workout.cpp.obj
+
+workout.i: workout.cpp.i
+.PHONY : workout.i
+
+# target to preprocess a source file
+workout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/workout.cpp.i
+.PHONY : workout.cpp.i
+
+workout.s: workout.cpp.s
+.PHONY : workout.s
+
+# target to generate assembly for a file
+workout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/workout.cpp.s
+.PHONY : workout.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,9 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... JustinWorkout
+	@echo ... exercise.obj
+	@echo ... exercise.i
+	@echo ... exercise.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... workout.obj
+	@echo ... workout.i
+	@echo ... workout.s
 .PHONY : help
 
 

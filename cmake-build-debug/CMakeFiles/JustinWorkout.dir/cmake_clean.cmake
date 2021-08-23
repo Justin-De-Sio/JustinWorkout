@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/JustinWorkout.dir/exercise.cpp.obj"
   "CMakeFiles/JustinWorkout.dir/main.cpp.obj"
+  "CMakeFiles/JustinWorkout.dir/workout.cpp.obj"
   "JustinWorkout.exe"
   "JustinWorkout.exe.manifest"
   "JustinWorkout.pdb"

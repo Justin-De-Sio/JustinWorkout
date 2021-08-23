@@ -80,7 +80,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Justin/CLionProjects/JustinWorkout/exercise.cpp">
+			<Option target="JustinWorkout"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin/CLionProjects/JustinWorkout/exercise.h">
+			<Option target="JustinWorkout"/>
+		</Unit>
 		<Unit filename="C:/Users/Justin/CLionProjects/JustinWorkout/main.cpp">
+			<Option target="JustinWorkout"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin/CLionProjects/JustinWorkout/workout.cpp">
+			<Option target="JustinWorkout"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin/CLionProjects/JustinWorkout/workout.h">
 			<Option target="JustinWorkout"/>
 		</Unit>
 		<Unit filename="C:/Users/Justin/CLionProjects/JustinWorkout/CMakeLists.txt">
