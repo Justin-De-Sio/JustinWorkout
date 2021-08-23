@@ -7,12 +7,18 @@
 
 
 #include <string>
+#include <utility>
 
 class Exercise {
 public:
+    Exercise(std::string name) : m_name(name) {};
+
     void setDifficulty(unsigned short difficulty);
 
-    [[nodiscard]] unsigned short getDifficulty() const;
+    std::string getName();
+
+    unsigned short getDifficulty() const;
+
 private:
     unsigned short m_difficulty{1};
     std::string m_name;

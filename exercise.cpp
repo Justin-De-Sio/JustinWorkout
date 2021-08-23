@@ -13,3 +13,7 @@ unsigned short Exercise::getDifficulty() const {
     return m_difficulty;
 }
 
+std::string Exercise::getName() {
+    return m_name;
+}
+

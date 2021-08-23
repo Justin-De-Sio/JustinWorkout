@@ -11,16 +11,19 @@
 
 class Workout {
 public:
+    Workout(std::string name) : m_name(name){}
     std::string getName();
 
     void setName(std::string name);
 
-    void addExercise(const Exercise& exercise);
+    void addExercise(Exercise *exercise);
 
 
 private:
-    std::vector<Exercise> *m_exercises;
-    std::string m_name = "Bras";
+    std::vector<Exercise*> m_exercises;
+    std::string m_name;
+
+
 };
 
 

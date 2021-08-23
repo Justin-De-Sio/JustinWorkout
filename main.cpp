@@ -4,14 +4,19 @@
 
 using namespace std;
 
-void tester() {
-    Workout w1;
-    Exercise e1;
-    Exercise e2;
-    w1.setName("Bras");
+void test() {
+    Workout w1{"seance haut du corp"};
+    Exercise e1{"pompe"};
+
+    cout << e1.getName()  << endl;
+    cout << w1.getName() << endl;
+//    w1.addExercise(e1);
+
 
 }
 
 int main() {
-    tester();
+    test();
+
+
 }
