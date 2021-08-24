@@ -7,23 +7,26 @@
 
 #include "exercise.h"
 #include <string>
+#include <utility>
 #include <vector>
 #include <cstdarg>
 
 class Workout {
 public:
-    Workout(std::string name) : m_name(name){}
+    explicit Workout(std::string name) : m_name(std::move(name)) {}
+
     std::string getName();
 
     void setName(std::string name);
 
-    void addExercise(Exercise & exercise);
-    void addExercises(Exercise & exercise, ...);
-    void removeExercise(Exercise & exercise);
+    void addExercise(Exercise &exercise);
+
+    void removeExercise(Exercise &exercise);
 
     void showExercise();
+
 private:
-    std::vector<Exercise*> m_exercises;
+    std::vector<Exercise *> m_exercises;
     std::string m_name;
 
 

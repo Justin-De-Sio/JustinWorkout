@@ -11,18 +11,15 @@
 
 class Exercise {
 public:
-    Exercise(std::string name) : m_name(name) {};
-
-    void setDifficulty(unsigned short difficulty);
+    explicit Exercise(std::string name) : m_name(std::move(name)) {};
 
     std::string getName();
 
-    unsigned short getDifficulty() const;
-
 private:
-    unsigned short m_difficulty{1};
+
     std::string m_name;
     unsigned short m_cpt{0};
+    unsigned short m_cptMax{6};
 };
 
 
