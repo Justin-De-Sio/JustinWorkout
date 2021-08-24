@@ -8,6 +8,7 @@
 #include "exercise.h"
 #include <string>
 #include <vector>
+#include <cstdarg>
 
 class Workout {
 public:
@@ -16,7 +17,9 @@ public:
 
     void setName(std::string name);
 
-    void addExercise(Exercise *exercise);
+    void addExercise(Exercise & exercise);
+    void addExercises(Exercise & exercise, ...);
+    void removeExercise(Exercise & exercise);
 
     void showExercise();
 private:

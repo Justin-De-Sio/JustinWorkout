@@ -1,21 +1,32 @@
 #include <iostream>
 #include "workout.h"
-#include "exercise.h"
 
 using namespace std;
 
 void test() {
-    Workout w1{"Upper body session"};
+    Workout uBody{"Upper body session"}, fBody{"Full body"};
 
-    Exercise e1{"Push-ups"}, e2{"Dips"}, e3{"Triceps extension on floor"}, e4{"Pick push ups"};
+    Exercise pushUps{"Push-ups"}, dips{"Dips"}, tricepsExtensionOnFloor{"Triceps Extension On Floor"},
+    pikePushUps{"pike push ups"}, l1{"Mountain Climbers"}, l2{"Lying Leg Raises"}, l3{"Crunches"},
+    l4{"Scissor Kicks"}, squats{"Squats"}, lunges{"Lunges"}, australianTraction{"Australian traction"};
 
-    w1.addExercise(&e1);
-    w1.addExercise(&e2);
-    w1.addExercise(&e3);
-    w1.addExercise(&e4);
+    uBody.addExercise(pikePushUps);
+    uBody.addExercise(dips);
+    uBody.addExercise(pushUps);
+    uBody.addExercise(tricepsExtensionOnFloor);
+
+    fBody.addExercise(squats);
+    fBody.addExercise(lunges);
+    fBody.addExercise(australianTraction);
+    fBody.addExercise(pikePushUps);
+    fBody.addExercise(dips);
+    fBody.addExercise(pushUps);
+
+    uBody.showExercise();
+    fBody.showExercise();
 
 
-    w1.showExercise();
+
 
 }
 
