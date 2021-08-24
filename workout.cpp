@@ -18,6 +18,14 @@ void Workout::setName(std::string name) {
 
 void Workout::addExercise(Exercise *exercise) {
     (m_exercises).insert(m_exercises.end(),exercise);
-    std::cout << exercise->getName() << " Ajouter à" << this->getName() << std::endl;
+//    std::cout << exercise->getName() << " added to " << this->getName() << std::endl;
+}
+
+void Workout::showExercise() {
+    std::cout << m_name << " :\n";
+    for(auto it{m_exercises.cbegin()}; it != m_exercises.cend(); ++it){
+        std::cout << "- " << (*it)->getName() << std::endl;
+    }
+
 }
 

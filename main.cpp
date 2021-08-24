@@ -5,13 +5,20 @@
 using namespace std;
 
 void test() {
-    Workout w1{"seance haut du corp"};
-    Exercise e1{"pompe"};
+    Workout w1{"Upper body session"};
 
-    cout << e1.getName()  << endl;
-    cout << w1.getName() << endl;
-//    w1.addExercise(e1);
+    Exercise e1{"Push-ups"};
+    Exercise e2{"Dips"};
+    Exercise e3{"Triceps extension on floor"};
+    Exercise e4{"Pick push ups"};
 
+    w1.addExercise(&e1);
+    w1.addExercise(&e2);
+    w1.addExercise(&e3);
+    w1.addExercise(&e4);
+
+
+    w1.showExercise();
 
 }
 

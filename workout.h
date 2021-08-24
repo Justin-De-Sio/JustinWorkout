@@ -18,7 +18,7 @@ public:
 
     void addExercise(Exercise *exercise);
 
-
+    void showExercise();
 private:
     std::vector<Exercise*> m_exercises;
     std::string m_name;
