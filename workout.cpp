@@ -1,11 +1,10 @@
 //
 // Created by Justin on 23/08/2021.
 //
-#include <limits>
+
 #include <iostream>
 #include "workout.h"
-#include <thread>
-#include <chrono>
+
 
 using namespace std;
 
@@ -52,6 +51,6 @@ void Workout::poo() {
 
 void Workout::next() {
     cout << "Press Enter to Continue";
-    cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
+    cin.ignore();
 }
 
