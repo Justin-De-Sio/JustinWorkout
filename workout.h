@@ -13,28 +13,24 @@
 
 class Workout {
 public:
-    explicit Workout(std::string name) : m_name(std::move(name)) {}
+	explicit Workout(std::string name) : m_name(std::move(name)) {}
 
-    std::string getName();
+	std::string getName();
 
-    void setName(std::string name);
+	void setName(std::string name);
 
-    void addExercise(Exercise &exercise);
+	void addExercise(Exercise& exercise);
 
-    void removeExercise(Exercise &exercise);
+	void removeExercise(Exercise& exercise);
 
-    void showExercise();
+	void showExercise();
 
-    void poo();
-
-
+	void poo();
+	void next();
 
 private:
-    std::vector<Exercise *> m_exercises;
-    std::string m_name;
-
-
+	std::vector<Exercise*> m_exercises;
+	std::string m_name;
 };
-
 
 #endif //JUSTINWORKOUT_WORKOUT_H

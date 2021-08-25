@@ -3,4 +3,4 @@ project(JustinWorkout)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(JustinWorkout main.cpp workout.cpp exercise.cpp)
+add_executable(JustinWorkout workout.cpp exercise.cpp main.cpp )
