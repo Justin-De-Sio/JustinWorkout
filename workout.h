@@ -15,7 +15,7 @@ class Workout {
 public:
 	explicit Workout(std::string name) : m_name(std::move(name)) {}
 
-	std::string getName();
+    std::string getName();
 
 	void setName(std::string name);
 

@@ -32,9 +32,10 @@ void Workout::showExercise() {
 }
 
 void Workout::poo() {
+    cout << "Press enter each time the series is done:" << endl ;
 	for (auto it{ m_exercises.cbegin() }; it != m_exercises.cend(); ++it) {
-		cout << "6 times " << (*it)->getName() << endl;
-		cout << "Press enter each time the series is done:" << endl;
+		cout << "6 times " << (*it)->getName() << endl<< endl;
+
 		int i = 0;
 		do {
 			cout << (*it)->getName() << " (" << i + 1 << "/6) " << endl;
@@ -49,3 +50,4 @@ void Workout::next()
 	cout << "Press Enter to Continue";
 	cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
 }
+

@@ -176,6 +176,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+setup.obj: setup.cpp.obj
+.PHONY : setup.obj
+
+# target to build an object file
+setup.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/setup.cpp.obj
+.PHONY : setup.cpp.obj
+
+setup.i: setup.cpp.i
+.PHONY : setup.i
+
+# target to preprocess a source file
+setup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/setup.cpp.i
+.PHONY : setup.cpp.i
+
+setup.s: setup.cpp.s
+.PHONY : setup.s
+
+# target to generate assembly for a file
+setup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JustinWorkout.dir\build.make CMakeFiles/JustinWorkout.dir/setup.cpp.s
+.PHONY : setup.cpp.s
+
 workout.obj: workout.cpp.obj
 .PHONY : workout.obj
 
@@ -215,6 +239,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... setup.obj
+	@echo ... setup.i
+	@echo ... setup.s
 	@echo ... workout.obj
 	@echo ... workout.i
 	@echo ... workout.s

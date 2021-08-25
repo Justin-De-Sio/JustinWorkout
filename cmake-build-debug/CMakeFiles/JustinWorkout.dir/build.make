@@ -65,18 +65,18 @@ include CMakeFiles/JustinWorkout.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/JustinWorkout.dir/flags.make
 
-CMakeFiles/JustinWorkout.dir/main.cpp.obj: CMakeFiles/JustinWorkout.dir/flags.make
-CMakeFiles/JustinWorkout.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Justin\CLionProjects\JustinWorkout\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/JustinWorkout.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\JustinWorkout.dir\main.cpp.obj -c C:\Users\Justin\CLionProjects\JustinWorkout\main.cpp
+CMakeFiles/JustinWorkout.dir/setup.cpp.obj: CMakeFiles/JustinWorkout.dir/flags.make
+CMakeFiles/JustinWorkout.dir/setup.cpp.obj: ../setup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Justin\CLionProjects\JustinWorkout\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/JustinWorkout.dir/setup.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\JustinWorkout.dir\setup.cpp.obj -c C:\Users\Justin\CLionProjects\JustinWorkout\setup.cpp
 
-CMakeFiles/JustinWorkout.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JustinWorkout.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Justin\CLionProjects\JustinWorkout\main.cpp > CMakeFiles\JustinWorkout.dir\main.cpp.i
+CMakeFiles/JustinWorkout.dir/setup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JustinWorkout.dir/setup.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Justin\CLionProjects\JustinWorkout\setup.cpp > CMakeFiles\JustinWorkout.dir\setup.cpp.i
 
-CMakeFiles/JustinWorkout.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JustinWorkout.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Justin\CLionProjects\JustinWorkout\main.cpp -o CMakeFiles\JustinWorkout.dir\main.cpp.s
+CMakeFiles/JustinWorkout.dir/setup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JustinWorkout.dir/setup.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Justin\CLionProjects\JustinWorkout\setup.cpp -o CMakeFiles\JustinWorkout.dir\setup.cpp.s
 
 CMakeFiles/JustinWorkout.dir/workout.cpp.obj: CMakeFiles/JustinWorkout.dir/flags.make
 CMakeFiles/JustinWorkout.dir/workout.cpp.obj: ../workout.cpp
@@ -104,23 +104,38 @@ CMakeFiles/JustinWorkout.dir/exercise.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JustinWorkout.dir/exercise.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Justin\CLionProjects\JustinWorkout\exercise.cpp -o CMakeFiles\JustinWorkout.dir\exercise.cpp.s
 
+CMakeFiles/JustinWorkout.dir/main.cpp.obj: CMakeFiles/JustinWorkout.dir/flags.make
+CMakeFiles/JustinWorkout.dir/main.cpp.obj: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Justin\CLionProjects\JustinWorkout\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/JustinWorkout.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\JustinWorkout.dir\main.cpp.obj -c C:\Users\Justin\CLionProjects\JustinWorkout\main.cpp
+
+CMakeFiles/JustinWorkout.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JustinWorkout.dir/main.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Justin\CLionProjects\JustinWorkout\main.cpp > CMakeFiles\JustinWorkout.dir\main.cpp.i
+
+CMakeFiles/JustinWorkout.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JustinWorkout.dir/main.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Justin\CLionProjects\JustinWorkout\main.cpp -o CMakeFiles\JustinWorkout.dir\main.cpp.s
+
 # Object files for target JustinWorkout
 JustinWorkout_OBJECTS = \
-"CMakeFiles/JustinWorkout.dir/main.cpp.obj" \
+"CMakeFiles/JustinWorkout.dir/setup.cpp.obj" \
 "CMakeFiles/JustinWorkout.dir/workout.cpp.obj" \
-"CMakeFiles/JustinWorkout.dir/exercise.cpp.obj"
+"CMakeFiles/JustinWorkout.dir/exercise.cpp.obj" \
+"CMakeFiles/JustinWorkout.dir/main.cpp.obj"
 
 # External object files for target JustinWorkout
 JustinWorkout_EXTERNAL_OBJECTS =
 
-JustinWorkout.exe: CMakeFiles/JustinWorkout.dir/main.cpp.obj
+JustinWorkout.exe: CMakeFiles/JustinWorkout.dir/setup.cpp.obj
 JustinWorkout.exe: CMakeFiles/JustinWorkout.dir/workout.cpp.obj
 JustinWorkout.exe: CMakeFiles/JustinWorkout.dir/exercise.cpp.obj
+JustinWorkout.exe: CMakeFiles/JustinWorkout.dir/main.cpp.obj
 JustinWorkout.exe: CMakeFiles/JustinWorkout.dir/build.make
 JustinWorkout.exe: CMakeFiles/JustinWorkout.dir/linklibs.rsp
 JustinWorkout.exe: CMakeFiles/JustinWorkout.dir/objects1.rsp
 JustinWorkout.exe: CMakeFiles/JustinWorkout.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Justin\CLionProjects\JustinWorkout\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable JustinWorkout.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Justin\CLionProjects\JustinWorkout\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable JustinWorkout.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\JustinWorkout.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

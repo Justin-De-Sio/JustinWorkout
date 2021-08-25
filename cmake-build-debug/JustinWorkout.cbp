@@ -89,6 +89,12 @@
 		<Unit filename="C:/Users/Justin/CLionProjects/JustinWorkout/main.cpp">
 			<Option target="JustinWorkout"/>
 		</Unit>
+		<Unit filename="C:/Users/Justin/CLionProjects/JustinWorkout/setup.cpp">
+			<Option target="JustinWorkout"/>
+		</Unit>
+		<Unit filename="C:/Users/Justin/CLionProjects/JustinWorkout/setup.h">
+			<Option target="JustinWorkout"/>
+		</Unit>
 		<Unit filename="C:/Users/Justin/CLionProjects/JustinWorkout/workout.cpp">
 			<Option target="JustinWorkout"/>
 		</Unit>

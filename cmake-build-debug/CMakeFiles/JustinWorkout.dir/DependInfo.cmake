@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Justin/CLionProjects/JustinWorkout/exercise.cpp" "C:/Users/Justin/CLionProjects/JustinWorkout/cmake-build-debug/CMakeFiles/JustinWorkout.dir/exercise.cpp.obj"
   "C:/Users/Justin/CLionProjects/JustinWorkout/main.cpp" "C:/Users/Justin/CLionProjects/JustinWorkout/cmake-build-debug/CMakeFiles/JustinWorkout.dir/main.cpp.obj"
+  "C:/Users/Justin/CLionProjects/JustinWorkout/setup.cpp" "C:/Users/Justin/CLionProjects/JustinWorkout/cmake-build-debug/CMakeFiles/JustinWorkout.dir/setup.cpp.obj"
   "C:/Users/Justin/CLionProjects/JustinWorkout/workout.cpp" "C:/Users/Justin/CLionProjects/JustinWorkout/cmake-build-debug/CMakeFiles/JustinWorkout.dir/workout.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
