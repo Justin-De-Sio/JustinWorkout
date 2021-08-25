@@ -1,7 +1,7 @@
 #include <iostream>
 #include "workout.h"
-
-
+#include <chrono>
+#include "timer.h"
 using namespace std;
 
 namespace exerciseLibrary {
@@ -53,9 +53,23 @@ Workout chooseWorkout() {
     return chooseWorkout();
 }
 
-int main() {
+void startedWorkout() {
+    using namespace std::chrono;
+    auto t0{steady_clock::now()};
+
     auto w = chooseWorkout();
-    w.showExercise();
+    w.poo();
+
+    auto t1{steady_clock::now()};
+    auto totalTime = duration_cast<minutes>(t1 - t0).count();
+    cout << "Total session time: " << totalTime << " minutes" << endl;
+}
+
+
+
+int main() {
+    startedWorkout();
+
 
 }
 

@@ -25,6 +25,10 @@ public:
 
     void showExercise();
 
+    void poo();
+
+
+
 private:
     std::vector<Exercise *> m_exercises;
     std::string m_name;
