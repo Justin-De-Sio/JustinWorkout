@@ -6,48 +6,52 @@
 #include "workout.h"
 #include <thread>
 #include <chrono>
+
 using namespace std;
+
 string Workout::getName() {
-	return m_name;
+    return m_name;
 }
 
 void Workout::setName(string name) {
-	m_name = move(name);
+    m_name = move(name);
 }
 
-void Workout::addExercise(Exercise& exercise) {
-	m_exercises.insert(m_exercises.end(), &exercise);
-	//    cout << exercise->getName() << " added to " << this->getName() << endl;
+void Workout::addExercise(Exercise &exercise) {
+    m_exercises.insert(m_exercises.end(), &exercise);
+    //    cout << exercise->getName() << " added to " << this->getName() << endl;
 }
 
-void Workout::removeExercise(Exercise& exercise) {
-	m_exercises.erase(find(m_exercises.cbegin(), m_exercises.cend(), &exercise));
+void Workout::removeExercise(Exercise &exercise) {
+    m_exercises.erase(find(m_exercises.cbegin(), m_exercises.cend(), &exercise));
 }
 
 void Workout::showExercise() {
-	cout << m_name << " :\n";
-	for (auto it{ m_exercises.cbegin() }; it != m_exercises.cend(); ++it) {
-		cout << "- " << (*it)->getName() << endl;
-	}
+    cout << m_name << " :\n";
+    for (auto it{m_exercises.cbegin()}; it != m_exercises.cend(); ++it) {
+
+        cout << "-" << (*it)->getName() << endl;
+
+    }
+    cout << "\n";
 }
 
 void Workout::poo() {
-    cout << "Press enter each time the series is done:" << endl ;
-	for (auto it{ m_exercises.cbegin() }; it != m_exercises.cend(); ++it) {
-		cout << "6 times " << (*it)->getName() << endl<< endl;
+    cout << "Press enter each time the series is done:" << endl;
+    for (auto it{m_exercises.cbegin()}; it != m_exercises.cend(); ++it) {
+        cout << "6 times " << (*it)->getName() << endl << endl;
 
-		int i = 0;
-		do {
-			cout << (*it)->getName() << " (" << i + 1 << "/6) " << endl;
-			next();
-			++i;
-		} while (i < 6);
-	}
+        int i = 0;
+        do {
+            cout << (*it)->getName() << " (" << i + 1 << "/6) " << endl;
+            next();
+            ++i;
+        } while (i < 6);
+    }
 }
 
-void Workout::next()
-{
-	cout << "Press Enter to Continue";
-	cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
+void Workout::next() {
+    cout << "Press Enter to Continue";
+    cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
 }
 

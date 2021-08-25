@@ -7,12 +7,14 @@ CMakeFiles/JustinWorkout.dir/exercise.cpp.obj: \
 CMakeFiles/JustinWorkout.dir/main.cpp.obj: \
  ../exercise.h \
  ../main.cpp \
- ../timer.h \
+ ../setup.h \
  ../workout.h
-CMakeFiles/JustinWorkout.dir/timer.cpp.obj: \
- ../timer.cpp
+CMakeFiles/JustinWorkout.dir/setup.cpp.obj: \
+ ../exercise.h \
+ ../setup.cpp \
+ ../setup.h \
+ ../workout.h
 CMakeFiles/JustinWorkout.dir/workout.cpp.obj: \
  ../exercise.h \
- ../timer.h \
  ../workout.cpp \
  ../workout.h

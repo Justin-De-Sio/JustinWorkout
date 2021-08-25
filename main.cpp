@@ -27,8 +27,9 @@ void startedWorkout() {
     using namespace std::chrono;
     auto t0{steady_clock::now()};
 
-    auto w = chooseWorkout();
-    w.poo();
+    auto workout = chooseWorkout();
+    workout.showExercise();
+    workout.poo();
 
     auto t1{steady_clock::now()};
     auto totalTime = duration_cast<minutes>(t1 - t0).count();
