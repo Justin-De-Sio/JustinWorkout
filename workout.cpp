@@ -8,12 +8,11 @@
 
 using namespace std;
 
-void Workout::addExercise(Exercise &exercise) {
-    m_exercises.insert(m_exercises.end(), &exercise);
-    //    cout << exercise->getName() << " added to " << this->getName() << "\n";
+ void Workout::addExercise( Exercise& exercise) {
+    m_exercises.insert(m_exercises.cend(), &exercise);
 }
 
-void Workout::removeExercise(Exercise &exercise) {
+ inline void Workout::removeExercise(Exercise &exercise) {
     m_exercises.erase(find(m_exercises.cbegin(), m_exercises.cend(), &exercise));
 }
 
@@ -24,7 +23,7 @@ void Workout::showExercise() const {
     cout << "\n";
 }
 
-void Workout::startOfTheSession()const {
+void Workout::startOfTheSession() {
     cout << "For each series :\n"
          << "Doing the exercice -> 2min pause -> Press enter to continue \n";
     for (Exercise const *exercise: m_exercises) {

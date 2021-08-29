@@ -9,9 +9,14 @@
 
 class Exercise {
 public:
+    Exercise();
+
     explicit Exercise(std::string name) : m_name(std::move(name)) {};
 
     std::string getName() const;
+
+    void setName(const std::string &name);
+
 
 private:
     std::string m_name;

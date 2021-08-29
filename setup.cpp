@@ -3,16 +3,17 @@
 //
 
 #include "setup.h"
+#include <memory>
 
-	 Exercise pushUps{ "Push-ups" }, dips{ "Dips" }, tricepsExtensionOnFloor{ "Triceps Extension On Floor" },
+
+
+Exercise pushUps{ "Push-ups" }, dips{ "Dips" }, tricepsExtensionOnFloor{ "Triceps Extension On Floor" },
 		pikePushUps{ "pike push ups" }, squats{ "Squats" }, lunges{ "Lunges" }, australianTraction{ "Australian traction" };
-
 
 Workout setUpperBody() {
 
-
+    
 	Workout uBody{ "Upper body session" };
-
 	uBody.addExercise(pikePushUps);
 	uBody.addExercise(dips);
 	uBody.addExercise(pushUps);
@@ -22,6 +23,7 @@ Workout setUpperBody() {
 }
 
 Workout setFullBody() {
+
 
 
 	Workout fBody{ "Full body" };

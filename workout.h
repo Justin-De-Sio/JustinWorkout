@@ -8,22 +8,23 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <memory>
 
 
 class Workout {
 public:
     explicit Workout(std::string name) : m_name(std::move(name)) {}
 
-    void addExercise(Exercise &exercise);
+    void addExercise( Exercise& exercise);
 
     void removeExercise(Exercise &exercise);
 
     void showExercise() const;
 
-    void startOfTheSession() const;
+    void startOfTheSession() ;
 
 private:
-    std::vector<Exercise *> m_exercises;
+    std::vector<Exercise*> m_exercises;
     std::string m_name;
 };
 
