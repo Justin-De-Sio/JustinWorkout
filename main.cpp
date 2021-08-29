@@ -12,6 +12,7 @@ Workout chooseWorkout() {
          << "2. Upper Body\n";
     int foo;
     cin >> foo;
+    cin.ignore();
     switch (foo) {
         case 1:
             return setFullBody();
@@ -29,11 +30,12 @@ void startedWorkout() {
 
     auto workout = chooseWorkout();
     workout.showExercise();
-    workout.poo();
+    workout.startOfTheSession();
 
     auto t1{steady_clock::now()};
-    auto totalTime = duration_cast<minutes>(t1 - t0).count();
-    cout << "Total session time: " << totalTime << " minutes" << endl;
+    auto totalTimeMinutes = duration_cast<minutes>(t1 - t0);
+    auto secondsLeft =   duration_cast<seconds>(t1 - t0) - totalTimeMinutes;
+    cout <<"Total session time: " << totalTimeMinutes.count() << " minutes " << secondsLeft.count() << " seconds\n";
 }
 
 int main() {

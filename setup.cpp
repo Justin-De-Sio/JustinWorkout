@@ -3,15 +3,13 @@
 //
 
 #include "setup.h"
-#include "workout.h"
 
-namespace exerciseLibrary {
-	Exercise pushUps{ "Push-ups" }, dips{ "Dips" }, tricepsExtensionOnFloor{ "Triceps Extension On Floor" },
+	 Exercise pushUps{ "Push-ups" }, dips{ "Dips" }, tricepsExtensionOnFloor{ "Triceps Extension On Floor" },
 		pikePushUps{ "pike push ups" }, squats{ "Squats" }, lunges{ "Lunges" }, australianTraction{ "Australian traction" };
-}
+
 
 Workout setUpperBody() {
-	using namespace exerciseLibrary;
+
 
 	Workout uBody{ "Upper body session" };
 
@@ -24,7 +22,7 @@ Workout setUpperBody() {
 }
 
 Workout setFullBody() {
-	using namespace exerciseLibrary;
+
 
 	Workout fBody{ "Full body" };
 

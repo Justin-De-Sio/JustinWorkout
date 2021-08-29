@@ -8,49 +8,35 @@
 
 using namespace std;
 
-string Workout::getName() {
-    return m_name;
-}
-
-void Workout::setName(string name) {
-    m_name = move(name);
-}
-
 void Workout::addExercise(Exercise &exercise) {
     m_exercises.insert(m_exercises.end(), &exercise);
-    //    cout << exercise->getName() << " added to " << this->getName() << endl;
+    //    cout << exercise->getName() << " added to " << this->getName() << "\n";
 }
 
 void Workout::removeExercise(Exercise &exercise) {
     m_exercises.erase(find(m_exercises.cbegin(), m_exercises.cend(), &exercise));
 }
 
-void Workout::showExercise() {
+void Workout::showExercise() const {
     cout << m_name << " :\n";
-    for (auto it{m_exercises.cbegin()}; it != m_exercises.cend(); ++it) {
-
-        cout << "-" << (*it)->getName() << endl;
-
-    }
+    for (Exercise const *exercise: m_exercises)
+        cout << "-" << exercise->getName() << "\n";
     cout << "\n";
 }
 
-void Workout::poo() {
-    cout << "Press enter each time the series is done:" << endl;
-    for (auto it{m_exercises.cbegin()}; it != m_exercises.cend(); ++it) {
-        cout << "6 times " << (*it)->getName() << endl << endl;
+void Workout::startOfTheSession()const {
+    cout << "For each series :\n"
+         << "Doing the exercice -> 2min pause -> Press enter to continue \n";
+    for (Exercise const *exercise: m_exercises) {
+        cout << "6 times " << exercise->getName() << "\n\n";
 
         int i = 0;
         do {
-            cout << (*it)->getName() << " (" << i + 1 << "/6) " << endl;
-            next();
+            cout << exercise->getName() << " (" << i + 1 << "/6)\n";
+            cin.ignore();
             ++i;
         } while (i < 6);
     }
-}
-
-void Workout::next() {
-    cout << "Press Enter to Continue";
-    cin.ignore();
+    cout << "Session finish\n";
 }
 

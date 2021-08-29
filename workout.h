@@ -1,36 +1,29 @@
 //
 // Created by Justin on 23/08/2021.
 //
+#pragma once
 
-#ifndef JUSTINWORKOUT_WORKOUT_H
-#define JUSTINWORKOUT_WORKOUT_H
 
 #include "exercise.h"
 #include <string>
 #include <utility>
 #include <vector>
-#include <cstdarg>
+
 
 class Workout {
 public:
-	explicit Workout(std::string name) : m_name(std::move(name)) {}
+    explicit Workout(std::string name) : m_name(std::move(name)) {}
 
-    std::string getName();
+    void addExercise(Exercise &exercise);
 
-	void setName(std::string name);
+    void removeExercise(Exercise &exercise);
 
-	void addExercise(Exercise& exercise);
+    void showExercise() const;
 
-	void removeExercise(Exercise& exercise);
-
-	void showExercise();
-
-	void poo();
-	void next();
+    void startOfTheSession() const;
 
 private:
-	std::vector<Exercise*> m_exercises;
-	std::string m_name;
+    std::vector<Exercise *> m_exercises;
+    std::string m_name;
 };
 
-#endif //JUSTINWORKOUT_WORKOUT_H

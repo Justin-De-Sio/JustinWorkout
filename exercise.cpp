@@ -5,7 +5,7 @@
 #include <iostream>
 #include "exercise.h"
 
-std::string Exercise::getName() {
+std::string Exercise::getName() const{
     return m_name;
 }
 
