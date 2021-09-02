@@ -3,12 +3,14 @@
 ## Utility
 workout assistant
 
-## Functionality
+## Primary functionality
 
-- [ ]  Count the number of series
-- [ ]  Difficulty score for each exercise : hard, appropriately difficult, easy, useless
-- [x]  to be able to select training
+- [x]  Count the number of series
+- [x]  Be able to select repetition
+- [x]  Be able to select training
 
 ## Additional functionality
 
 - [ ]  UI design
+- [ ] saving data
+- [ ] optimization

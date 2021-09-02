@@ -5,7 +5,7 @@
 #pragma once
 
 #include <string>
-#include <utility>
+
 
 class Exercise {
 public:
@@ -16,9 +16,11 @@ public:
     std::string getName() const;
 
     void setName(const std::string &name);
-
+    void setRepeat(unsigned repeat);
+    unsigned getRepeat()const;
 
 private:
     std::string m_name;
+    unsigned m_repeat{};
 };
 

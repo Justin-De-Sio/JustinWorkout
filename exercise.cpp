@@ -13,5 +13,15 @@
     m_name = name;
 }
 
+ void Exercise::setRepeat(unsigned repeat)
+ {
+     m_repeat = repeat;
+ }
+
+ unsigned Exercise::getRepeat() const
+ {
+     return m_repeat;
+ }
+
 
 

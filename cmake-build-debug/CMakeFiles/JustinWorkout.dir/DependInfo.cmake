@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Justin/CLionProjects/JustinWorkout/exercise.cpp" "C:/Users/Justin/CLionProjects/JustinWorkout/cmake-build-debug/CMakeFiles/JustinWorkout.dir/exercise.cpp.obj"
-  "C:/Users/Justin/CLionProjects/JustinWorkout/main.cpp" "C:/Users/Justin/CLionProjects/JustinWorkout/cmake-build-debug/CMakeFiles/JustinWorkout.dir/main.cpp.obj"
-  "C:/Users/Justin/CLionProjects/JustinWorkout/setup.cpp" "C:/Users/Justin/CLionProjects/JustinWorkout/cmake-build-debug/CMakeFiles/JustinWorkout.dir/setup.cpp.obj"
-  "C:/Users/Justin/CLionProjects/JustinWorkout/workout.cpp" "C:/Users/Justin/CLionProjects/JustinWorkout/cmake-build-debug/CMakeFiles/JustinWorkout.dir/workout.cpp.obj"
+  "C:/Users/Justin/source/repos/Justin-De-Sio/JustinWorkout2/exercise.cpp" "C:/Users/Justin/source/repos/Justin-De-Sio/JustinWorkout2/cmake-build-debug/CMakeFiles/JustinWorkout.dir/exercise.cpp.obj"
+  "C:/Users/Justin/source/repos/Justin-De-Sio/JustinWorkout2/main.cpp" "C:/Users/Justin/source/repos/Justin-De-Sio/JustinWorkout2/cmake-build-debug/CMakeFiles/JustinWorkout.dir/main.cpp.obj"
+  "C:/Users/Justin/source/repos/Justin-De-Sio/JustinWorkout2/setup.cpp" "C:/Users/Justin/source/repos/Justin-De-Sio/JustinWorkout2/cmake-build-debug/CMakeFiles/JustinWorkout.dir/setup.cpp.obj"
+  "C:/Users/Justin/source/repos/Justin-De-Sio/JustinWorkout2/workout.cpp" "C:/Users/Justin/source/repos/Justin-De-Sio/JustinWorkout2/cmake-build-debug/CMakeFiles/JustinWorkout.dir/workout.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

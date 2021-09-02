@@ -20,6 +20,7 @@ public:
     void removeExercise(Exercise &exercise);
 
     void showExercise() const;
+    void setAllRepeat(const unsigned & repeat);
 
     void startOfTheSession() ;
 
