@@ -7,6 +7,7 @@
 #include "workout.h"
 
 Workout setUpperBody();
+
 Workout setFullBody();
 
 unsigned askRepeat();

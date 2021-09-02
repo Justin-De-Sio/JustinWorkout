@@ -9,15 +9,17 @@
 
 class Exercise {
 public:
-    Exercise();
+
 
     explicit Exercise(std::string name) : m_name(std::move(name)) {};
 
-    std::string getName() const;
+    [[nodiscard]] std::string getName() const;
 
     void setName(const std::string &name);
+
     void setRepeat(unsigned repeat);
-    unsigned getRepeat()const;
+
+    [[nodiscard]] unsigned getRepeat() const;
 
 private:
     std::string m_name;

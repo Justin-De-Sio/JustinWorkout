@@ -15,17 +15,18 @@ class Workout {
 public:
     explicit Workout(std::string name) : m_name(std::move(name)) {}
 
-    void addExercise( Exercise& exercise);
+    void addExercise(Exercise &exercise);
 
     void removeExercise(Exercise &exercise);
 
     void showExercise() const;
-    void setAllRepeat(const unsigned & repeat);
 
-    void startOfTheSession() ;
+    void setAllRepeat(const unsigned &repeat);
+
+    void startOfTheSession();
 
 private:
-    std::vector<Exercise*> m_exercises;
+    std::vector<Exercise *> m_exercises;
     std::string m_name;
 };
 
