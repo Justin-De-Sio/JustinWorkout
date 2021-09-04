@@ -36,4 +36,5 @@ int main() {
     auto totalTimeMinutes = duration_cast<minutes>(t1 - t0);
     auto secondsLeft = duration_cast<seconds>(t1 - t0) - totalTimeMinutes;
     cout << "Total session time: " << totalTimeMinutes.count() << " minutes " << secondsLeft.count() << " seconds\n";
+    system("pause");
 }
