@@ -45,7 +45,7 @@ Workout setFullBody() {
 
 unsigned askRepeat() {
     unsigned repeat{0};
-    cout << "How many repetitions do you do between 6-10 ?";
+    cout << "How many repetitions do you do between 6-10 ?\n";
     cin >> repeat;
     cin.ignore();
     if (inRange(6, 10, repeat))
