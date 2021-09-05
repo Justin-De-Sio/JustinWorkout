@@ -5,9 +5,12 @@ workout assistant
 
 ## Primary functionality
 
-- [x]  Count the number of series
-- [x]  Be able to select repetition
 - [x]  Be able to select training
+- [x]  Be able to select difficulty
+- [x]  Be able to select repetition
+- [x]  Count the number of series
+
+
 
 ## Additional functionality
 
