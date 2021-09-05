@@ -32,15 +32,15 @@ void Workout::setAllRepeat(const unsigned &repeat) {
 }
 
 void Workout::startOfTheSession() {
-    cout << "* TRAINING LAUNCHED *\n"
-            "For each series :\n"
-            "Doing the exercice -> 2min pause -> Press enter to continue \n";
+    cout << "For each series :\n"
+            "Doing the exercice -> 2min pause -> Press enter to continue \n\n"
+            "* TRAINING LAUNCHED *\n";
     for (Exercise const *exercise: m_exercises) {
-        cout << "6 times " << exercise->getRepeat() << " " << exercise->getName() << "\n\n";
+        cout << "\n6 times " << exercise->getRepeat() << " " << exercise->getName() << ":\n";
 
         int i = 0;
         do {
-            cout << exercise->getRepeat() << " " << exercise->getName() << " (" << i + 1 << "/6)\n";
+            cout << exercise->getRepeat() << " " << exercise->getName() << " (" << i + 1 << "/6)";
             cin.ignore();
             ++i;
         } while (i < 6);
