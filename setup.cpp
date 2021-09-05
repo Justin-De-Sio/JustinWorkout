@@ -95,7 +95,7 @@ Workout setFullBody() {
 }
 
 unsigned askDifficulty() {
-    cout << "Choose your difficulty\n1. Easy\n2. Medium\n";
+    cout << "Choose your difficulty:\n1. Easy\n2. Medium\n";
     unsigned difficulty;
     cin >> difficulty;
     if (!inRange(1, 2, difficulty))
@@ -105,7 +105,7 @@ unsigned askDifficulty() {
 
 unsigned askRepeat() {
     unsigned repeat{0};
-    cout << "How many repetitions do you do between 6-10 ?\n";
+    cout << "You will do 6 sets of each exercise.\nHow many repetitions do you want to do between 6 and 10 ?\n";
     cin >> repeat;
     cin.ignore();
     if (inRange(6, 10, repeat))
@@ -116,7 +116,7 @@ unsigned askRepeat() {
 
 unsigned askDay() {
     unsigned day{0};
-    cout << "Choose your training day\n1. Day 1\n2. Day 2\n";
+    cout << "Choose your training day:\n1. Day 1\n2. Day 2\n";
     cin >> day;
     if (!inRange(1, 2, day))
         askDay();
