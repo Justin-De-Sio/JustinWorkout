@@ -8,39 +8,99 @@
 
 using namespace std;
 
-Exercise pushUps{"Push-ups"}, dips{"Dips"}, tricepsExtensionOnFloor{"Triceps Extension On Floor"},
-        pikePushUps{"pike push ups"}, squats{"Squats"}, lunges{"Lunges"}, australianTraction{"Australian traction"};
+Exercise pushUps{"Push-ups"}, dipsOnFloor{"Dips on floor"}, tricepsExtensionOnFloor{
+        "Triceps extension on the floor"}, tricepsExtensionOnWall("Triceps extension on the wall"),
+        pikePushUps{"Pike push ups"}, squats{"Squats"}, lunges{"Lunges"},
+        australianTractionPronation{"Australian traction"}, australianTractionSupination(
+        "Australian traction supination"), archerSquat("Archer squat"),
+        DeclineLunges("Decline lunges"), tractionPronation("Traction pronation"), tractionSupination(
+        "Traction supination"),
+        DeclinePikePushUp("Decline pike push up"), BenchDips(
+        "Bench dips"), DeclineDiamondPumps("Decline  diamond pumps"), superman("Superman"),
+        calfExtension("calf extension"), weightedSuperman("Weighted superman");
+
 
 Workout setUpperBody() {
-    auto repeat = askRepeat();
 
     Workout uBody{"Upper body session"};
 
-    uBody.addExercise(pikePushUps);
-    uBody.addExercise(dips);
-    uBody.addExercise(pushUps);
-    uBody.addExercise(tricepsExtensionOnFloor);
+    switch (askDay()) {
+        case 1:
+            switch (askDifficulty()) {
+                case 1:
+                    uBody.addExercise(pikePushUps);
+                    uBody.addExercise(dipsOnFloor);
+                    uBody.addExercise(pushUps);
+                    uBody.addExercise(tricepsExtensionOnFloor);
+                    break;
+                case 2:
+                    uBody.addExercise(DeclinePikePushUp);
+                    uBody.addExercise(BenchDips);
+                    uBody.addExercise(DeclineDiamondPumps);
+                    uBody.addExercise(tricepsExtensionOnWall);
+                    break;
+            }
+            break;
 
-    uBody.setAllRepeat(repeat);
+        case 2:
+            switch (askDifficulty()) {
+                case 1:
+                    uBody.addExercise(squats);
+                    uBody.addExercise(lunges);
+                    uBody.addExercise(calfExtension);
+                    uBody.addExercise(australianTractionPronation);
+                    uBody.addExercise(australianTractionSupination);
+                    uBody.addExercise(superman);
+                    break;
+                case 2:
+                    uBody.addExercise(archerSquat);
+                    uBody.addExercise(DeclineLunges);
+                    uBody.addExercise(calfExtension);
+                    uBody.addExercise(tractionPronation);
+                    uBody.addExercise(tractionSupination);
+                    uBody.addExercise(weightedSuperman);
+                    break;
+            }
+            break;
 
+    }
     return uBody;
 }
 
 Workout setFullBody() {
-    auto repeat = askRepeat();
+
 
     Workout fBody{"Full body"};
+    switch (askDifficulty()) {
+        case 1:
+            fBody.addExercise(squats);
+            fBody.addExercise(lunges);
+            fBody.addExercise(australianTractionPronation);
+            fBody.addExercise(pikePushUps);
+            fBody.addExercise(dipsOnFloor);
+            fBody.addExercise(pushUps);
+            break;
+        case 2:
+            fBody.addExercise(archerSquat);
+            fBody.addExercise(DeclineLunges);
+            fBody.addExercise(tractionPronation);
+            fBody.addExercise(DeclinePikePushUp);
+            fBody.addExercise(BenchDips);
+            fBody.addExercise(DeclineDiamondPumps);
+            break;
 
-    fBody.addExercise(squats);
-    fBody.addExercise(lunges);
-    fBody.addExercise(australianTraction);
-    fBody.addExercise(pikePushUps);
-    fBody.addExercise(dips);
-    fBody.addExercise(pushUps);
-
-    fBody.setAllRepeat(repeat);
+    }
 
     return fBody;
+}
+
+unsigned askDifficulty() {
+    cout << "Choose your difficulty\n1. Easy\n2. Medium\n";
+    unsigned difficulty;
+    cin >> difficulty;
+    if (!inRange(1, 2, difficulty))
+        askDifficulty();
+    return difficulty;
 }
 
 unsigned askRepeat() {
@@ -53,6 +113,16 @@ unsigned askRepeat() {
     else
         askRepeat();
 }
+
+unsigned askDay() {
+    unsigned day{0};
+    cout << "Choose your training day\n1. Day 1\n2. Day 2\n";
+    cin >> day;
+    if (!inRange(1, 2, day))
+        askDay();
+    return day;
+}
+
 
 bool inRange(unsigned low, unsigned high, unsigned x) {
     return (low <= x && x <= high);

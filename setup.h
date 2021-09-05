@@ -10,6 +10,8 @@ Workout setUpperBody();
 
 Workout setFullBody();
 
-unsigned askRepeat();
 
 bool inRange(unsigned low, unsigned high, unsigned x);
+unsigned askDifficulty();
+unsigned askRepeat();
+unsigned askDay();

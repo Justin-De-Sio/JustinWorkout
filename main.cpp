@@ -8,9 +8,7 @@ using namespace std;
 using namespace std::chrono;
 
 Workout chooseWorkout() {
-    cout << "Hello, choose your bodybuilding training:\n"
-         << "1. Full Body\n"
-         << "2. Upper Body\n";
+    cout << "Hello, choose your bodybuilding training:\n1. Full Body\n2. Upper Body\n";
     int foo;
     cin >> foo;
     cin.ignore();
@@ -26,10 +24,13 @@ Workout chooseWorkout() {
 }
 
 int main() {
-    auto t0{steady_clock::now()};
 
     auto workout = chooseWorkout();
     workout.showExercise();
+    workout.setAllRepeat(askRepeat());
+
+    auto t0{steady_clock::now()};
+
     workout.startOfTheSession();
 
     auto t1{steady_clock::now()};
