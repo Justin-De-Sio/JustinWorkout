@@ -32,8 +32,9 @@ void Workout::setAllRepeat(const unsigned &repeat) {
 }
 
 void Workout::startOfTheSession() {
-    cout << "For each series :\n"
-         << "Doing the exercice -> 2min pause -> Press enter to continue \n";
+    cout << "* TRAINING LAUNCHED *\n"
+            "For each series :\n"
+            "Doing the exercice -> 2min pause -> Press enter to continue \n";
     for (Exercise const *exercise: m_exercises) {
         cout << "6 times " << exercise->getRepeat() << " " << exercise->getName() << "\n\n";
 

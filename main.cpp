@@ -8,10 +8,13 @@ using namespace std;
 using namespace std::chrono;
 
 Workout chooseWorkout() {
-    cout << "Hello, choose your bodybuilding training:\n1. Full Body\n2. Upper Body\n";
+    cout << "Hello, choose your bodybuilding training:\n"
+            "1. Full Body\n"
+            "2. Upper Body\n";
     int foo;
     cin >> foo;
     cin.ignore();
+    cout << "\n";
     switch (foo) {
         case 1:
             return setFullBody();
